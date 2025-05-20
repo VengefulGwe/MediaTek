@@ -46,12 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\FrmAuthentificationController.cs" />
     <Compile Include="controller\FrmMediaTekController.cs" />
     <Compile Include="dal\Access.cs" />
     <Compile Include="dal\AccessAbsences.cs" />
     <Compile Include="dal\AccessPersonnel.cs" />
     <Compile Include="model\Absences.cs" />
+    <Compile Include="model\Admin.cs" />
     <Compile Include="model\Personnel.cs" />
+    <Compile Include="view\FrmAuthentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\FrmAuthentification.Designer.cs">
+      <DependentUpon>FrmAuthentification.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\FrmMediaTek.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +77,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\FrmAuthentification.resx">
+      <DependentUpon>FrmAuthentification.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
