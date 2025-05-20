@@ -1,5 +1,4 @@
-﻿using MediaTek.model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,14 +10,14 @@ using System.Windows.Forms;
 
 namespace MediaTek.view
 {
-    public partial class FrmAuthentification : Form
+    public partial class frmAbsences : Form
     {
-        public FrmAuthentification()
+        public frmAbsences()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
