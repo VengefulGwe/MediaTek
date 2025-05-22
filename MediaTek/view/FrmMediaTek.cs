@@ -10,31 +10,17 @@ using System.Windows.Forms;
 
 namespace MediaTek.view
 {
+    /// <summary>
+    /// Classe du design de la fenêtre principale de l'application
+    /// </summary>
     public partial class FrmMediaTek : Form
     {
+        /// <summary>
+        /// Méthode initialisant la fenêtre principale de l'application
+        /// </summary>
         public FrmMediaTek()
         {
             InitializeComponent();
-        }
-
-        private void grbPersonnel_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

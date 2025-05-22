@@ -12,14 +12,5 @@ namespace MediaTek.view
 {
     public partial class frmAbsences : Form
     {
-        public frmAbsences()
-        {
-            InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

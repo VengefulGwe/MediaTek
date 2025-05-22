@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MediaTek.controller
 {
+    /// <summary>
+    /// Contrôleur de FrmAuthentification
+    /// </summary>
     public class FrmAuthentificationController
     {
     }

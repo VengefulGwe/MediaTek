@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MediaTek.model
 {
+    /// <summary>
+    /// Classe métier interne pour mémoriser les informations des absences
+    /// </summary>
     public class Absences
     {
     }

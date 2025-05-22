@@ -1,5 +1,8 @@
 ﻿namespace MediaTek.view
 {
+    /// <summary>
+    /// Classe du design de la fenêtre
+    /// </summary>
     partial class frmAbsences
     {
         /// <summary>
@@ -29,22 +32,23 @@
         private void InitializeComponent()
         {
             this.grbAbsences = new System.Windows.Forms.GroupBox();
-            this.dgvAbsences = new System.Windows.Forms.DataGridView();
-            this.btnModifAbsences = new System.Windows.Forms.Button();
             this.btnSuppAbsences = new System.Windows.Forms.Button();
+            this.btnModifAbsences = new System.Windows.Forms.Button();
+            this.dgvAbsences = new System.Windows.Forms.DataGridView();
             this.grbAddAbsences = new System.Windows.Forms.GroupBox();
-            this.btnEnregAbsence = new System.Windows.Forms.Button();
-            this.btnAnnulAbsence = new System.Windows.Forms.Button();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
-            this.txtPrenom = new System.Windows.Forms.TextBox();
-            this.txtMotif = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
             this.dtpFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpDebut = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtMotif = new System.Windows.Forms.TextBox();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Label1 = new System.Windows.Forms.Label();
+            this.btnAnnulAbsence = new System.Windows.Forms.Button();
+            this.btnEnregAbsence = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.grbAbsences.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAbsences)).BeginInit();
             this.grbAddAbsences.SuspendLayout();
@@ -62,15 +66,14 @@
             this.grbAbsences.TabStop = false;
             this.grbAbsences.Text = "Liste d\'absences";
             // 
-            // dgvAbsences
+            // btnSuppAbsences
             // 
-            this.dgvAbsences.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAbsences.Location = new System.Drawing.Point(15, 21);
-            this.dgvAbsences.Name = "dgvAbsences";
-            this.dgvAbsences.RowHeadersWidth = 51;
-            this.dgvAbsences.RowTemplate.Height = 24;
-            this.dgvAbsences.Size = new System.Drawing.Size(731, 246);
-            this.dgvAbsences.TabIndex = 0;
+            this.btnSuppAbsences.Location = new System.Drawing.Point(126, 273);
+            this.btnSuppAbsences.Name = "btnSuppAbsences";
+            this.btnSuppAbsences.Size = new System.Drawing.Size(105, 28);
+            this.btnSuppAbsences.TabIndex = 2;
+            this.btnSuppAbsences.Text = "supprimer";
+            this.btnSuppAbsences.UseVisualStyleBackColor = true;
             // 
             // btnModifAbsences
             // 
@@ -81,14 +84,15 @@
             this.btnModifAbsences.Text = "modifier";
             this.btnModifAbsences.UseVisualStyleBackColor = true;
             // 
-            // btnSuppAbsences
+            // dgvAbsences
             // 
-            this.btnSuppAbsences.Location = new System.Drawing.Point(126, 273);
-            this.btnSuppAbsences.Name = "btnSuppAbsences";
-            this.btnSuppAbsences.Size = new System.Drawing.Size(105, 28);
-            this.btnSuppAbsences.TabIndex = 2;
-            this.btnSuppAbsences.Text = "supprimer";
-            this.btnSuppAbsences.UseVisualStyleBackColor = true;
+            this.dgvAbsences.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAbsences.Location = new System.Drawing.Point(15, 21);
+            this.dgvAbsences.Name = "dgvAbsences";
+            this.dgvAbsences.RowHeadersWidth = 51;
+            this.dgvAbsences.RowTemplate.Height = 24;
+            this.dgvAbsences.Size = new System.Drawing.Size(731, 246);
+            this.dgvAbsences.TabIndex = 0;
             // 
             // grbAddAbsences
             // 
@@ -111,81 +115,19 @@
             this.grbAddAbsences.TabStop = false;
             this.grbAddAbsences.Text = "ajouter une absence";
             // 
-            // btnEnregAbsence
+            // dtpFin
             // 
-            this.btnEnregAbsence.Location = new System.Drawing.Point(15, 132);
-            this.btnEnregAbsence.Name = "btnEnregAbsence";
-            this.btnEnregAbsence.Size = new System.Drawing.Size(99, 24);
-            this.btnEnregAbsence.TabIndex = 0;
-            this.btnEnregAbsence.Text = "enregistrer";
-            this.btnEnregAbsence.UseVisualStyleBackColor = true;
+            this.dtpFin.Location = new System.Drawing.Point(515, 64);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(240, 22);
+            this.dtpFin.TabIndex = 11;
             // 
-            // btnAnnulAbsence
+            // dtpDebut
             // 
-            this.btnAnnulAbsence.Location = new System.Drawing.Point(132, 132);
-            this.btnAnnulAbsence.Name = "btnAnnulAbsence";
-            this.btnAnnulAbsence.Size = new System.Drawing.Size(99, 24);
-            this.btnAnnulAbsence.TabIndex = 1;
-            this.btnAnnulAbsence.Text = "annuler";
-            this.btnAnnulAbsence.UseVisualStyleBackColor = true;
-            // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(12, 31);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(33, 16);
-            this.Label1.TabIndex = 2;
-            this.Label1.Text = "nom";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "prénom";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "motif";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtNom
-            // 
-            this.txtNom.Location = new System.Drawing.Point(82, 28);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(300, 22);
-            this.txtNom.TabIndex = 5;
-            // 
-            // txtPrenom
-            // 
-            this.txtPrenom.Location = new System.Drawing.Point(82, 64);
-            this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(300, 22);
-            this.txtPrenom.TabIndex = 6;
-            // 
-            // txtMotif
-            // 
-            this.txtMotif.Location = new System.Drawing.Point(82, 101);
-            this.txtMotif.Name = "txtMotif";
-            this.txtMotif.Size = new System.Drawing.Size(300, 22);
-            this.txtMotif.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(419, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "date de début";
+            this.dtpDebut.Location = new System.Drawing.Point(515, 31);
+            this.dtpDebut.Name = "dtpDebut";
+            this.dtpDebut.Size = new System.Drawing.Size(240, 22);
+            this.dtpDebut.TabIndex = 10;
             // 
             // label5
             // 
@@ -196,25 +138,96 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "date de fin";
             // 
-            // dtpDebut
+            // label4
             // 
-            this.dtpDebut.Location = new System.Drawing.Point(515, 31);
-            this.dtpDebut.Name = "dtpDebut";
-            this.dtpDebut.Size = new System.Drawing.Size(240, 22);
-            this.dtpDebut.TabIndex = 10;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(419, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "date de début";
             // 
-            // dtpFin
+            // txtMotif
             // 
-            this.dtpFin.Location = new System.Drawing.Point(515, 64);
-            this.dtpFin.Name = "dtpFin";
-            this.dtpFin.Size = new System.Drawing.Size(240, 22);
-            this.dtpFin.TabIndex = 11;
+            this.txtMotif.Location = new System.Drawing.Point(82, 101);
+            this.txtMotif.Name = "txtMotif";
+            this.txtMotif.Size = new System.Drawing.Size(300, 22);
+            this.txtMotif.TabIndex = 7;
+            // 
+            // txtPrenom
+            // 
+            this.txtPrenom.Location = new System.Drawing.Point(82, 64);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(300, 22);
+            this.txtPrenom.TabIndex = 6;
+            // 
+            // txtNom
+            // 
+            this.txtNom.Location = new System.Drawing.Point(82, 28);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(300, 22);
+            this.txtNom.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 104);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "motif";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "prénom";
+            // 
+            // Label1
+            // 
+            this.Label1.AutoSize = true;
+            this.Label1.Location = new System.Drawing.Point(12, 31);
+            this.Label1.Name = "Label1";
+            this.Label1.Size = new System.Drawing.Size(33, 16);
+            this.Label1.TabIndex = 2;
+            this.Label1.Text = "nom";
+            // 
+            // btnAnnulAbsence
+            // 
+            this.btnAnnulAbsence.Location = new System.Drawing.Point(132, 132);
+            this.btnAnnulAbsence.Name = "btnAnnulAbsence";
+            this.btnAnnulAbsence.Size = new System.Drawing.Size(99, 24);
+            this.btnAnnulAbsence.TabIndex = 1;
+            this.btnAnnulAbsence.Text = "annuler";
+            this.btnAnnulAbsence.UseVisualStyleBackColor = true;
+            // 
+            // btnEnregAbsence
+            // 
+            this.btnEnregAbsence.Location = new System.Drawing.Point(15, 132);
+            this.btnEnregAbsence.Name = "btnEnregAbsence";
+            this.btnEnregAbsence.Size = new System.Drawing.Size(99, 24);
+            this.btnEnregAbsence.TabIndex = 0;
+            this.btnEnregAbsence.Text = "enregistrer";
+            this.btnEnregAbsence.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(27, 506);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 32);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Retour";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmAbsences
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 512);
+            this.ClientSize = new System.Drawing.Size(800, 544);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.grbAddAbsences);
             this.Controls.Add(this.grbAbsences);
             this.Name = "frmAbsences";
@@ -246,5 +259,6 @@
         private System.Windows.Forms.DateTimePicker dtpDebut;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }

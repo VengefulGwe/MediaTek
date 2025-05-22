@@ -6,6 +6,13 @@ using System.Windows.Forms;
 
 namespace MediaTek
 {
+    /// <summary>
+    /// application de gestion de personnel et d'absences
+    /// </summary>
+    internal class NamespaceDoc
+    {
+
+    }
     internal static class Program
     {
         /// <summary>
@@ -16,7 +23,7 @@ namespace MediaTek
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMediaTek());
+            Application.Run(new view.FrmAuthentification());
         }
     }
 }

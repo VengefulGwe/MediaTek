@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MediaTek.model
 {
-    public class Admin
+    /// <summary>
+    /// Classe métier interne pour mémoriser les informations d'authentification
+    /// </summary>
+    public class Responsable
     {
     }
 }

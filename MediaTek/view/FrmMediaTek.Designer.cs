@@ -63,7 +63,6 @@
             this.grbLePersonnel.TabIndex = 0;
             this.grbLePersonnel.TabStop = false;
             this.grbLePersonnel.Text = "le personnel";
-            this.grbLePersonnel.Enter += new System.EventHandler(this.grbPersonnel_Enter);
             // 
             // btnSuppression
             // 
@@ -122,7 +121,6 @@
             this.label2.Size = new System.Drawing.Size(53, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "prénom";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -182,7 +180,6 @@
             this.label4.Size = new System.Drawing.Size(32, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "mail";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtTel
             // 
@@ -190,7 +187,6 @@
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(326, 22);
             this.txtTel.TabIndex = 11;
-            this.txtTel.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtMail
             // 
