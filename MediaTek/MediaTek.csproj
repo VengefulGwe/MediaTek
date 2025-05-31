@@ -57,10 +57,14 @@
     <Compile Include="controller\FrmMediaTekController.cs" />
     <Compile Include="dal\Access.cs" />
     <Compile Include="dal\AccessAbsences.cs" />
+    <Compile Include="dal\AccessMotif.cs" />
     <Compile Include="dal\AccessPersonnel.cs" />
+    <Compile Include="dal\AccessService.cs" />
     <Compile Include="model\Absences.cs" />
+    <Compile Include="model\Motif.cs" />
     <Compile Include="model\Responsable.cs" />
     <Compile Include="model\Personnel.cs" />
+    <Compile Include="model\Services.cs" />
     <Compile Include="view\FrmAbsences.cs">
       <SubType>Form</SubType>
     </Compile>

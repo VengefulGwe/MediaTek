@@ -33,23 +33,22 @@
             this.btnModification = new System.Windows.Forms.Button();
             this.dgvPersonnel = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.grbPersonnel = new System.Windows.Forms.GroupBox();
+            this.grbAjoutMembre = new System.Windows.Forms.GroupBox();
+            this.cbServices = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtMail = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPrenom = new System.Windows.Forms.TextBox();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.btnAnnulPerso = new System.Windows.Forms.Button();
             this.btnEnregPerso = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTel = new System.Windows.Forms.TextBox();
-            this.txtMail = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtService = new System.Windows.Forms.TextBox();
-            this.btnAffAbsences = new System.Windows.Forms.Button();
             this.grbLePersonnel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel)).BeginInit();
-            this.grbPersonnel.SuspendLayout();
+            this.grbAjoutMembre.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbLePersonnel
@@ -72,6 +71,7 @@
             this.btnSuppression.TabIndex = 2;
             this.btnSuppression.Text = "supprimer";
             this.btnSuppression.UseVisualStyleBackColor = true;
+            this.btnSuppression.Click += new System.EventHandler(this.btnSuppression_Click);
             // 
             // btnModification
             // 
@@ -81,6 +81,7 @@
             this.btnModification.TabIndex = 1;
             this.btnModification.Text = "modifier";
             this.btnModification.UseVisualStyleBackColor = true;
+            this.btnModification.Click += new System.EventHandler(this.btnModification_Click);
             // 
             // dgvPersonnel
             // 
@@ -91,27 +92,77 @@
             this.dgvPersonnel.RowTemplate.Height = 24;
             this.dgvPersonnel.Size = new System.Drawing.Size(730, 257);
             this.dgvPersonnel.TabIndex = 0;
+            this.dgvPersonnel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonnel_CellContentClick);
             // 
-            // grbPersonnel
+            // grbAjoutMembre
             // 
-            this.grbPersonnel.Controls.Add(this.txtService);
-            this.grbPersonnel.Controls.Add(this.label5);
-            this.grbPersonnel.Controls.Add(this.txtMail);
-            this.grbPersonnel.Controls.Add(this.txtTel);
-            this.grbPersonnel.Controls.Add(this.label4);
-            this.grbPersonnel.Controls.Add(this.label3);
-            this.grbPersonnel.Controls.Add(this.label2);
-            this.grbPersonnel.Controls.Add(this.label1);
-            this.grbPersonnel.Controls.Add(this.txtPrenom);
-            this.grbPersonnel.Controls.Add(this.txtNom);
-            this.grbPersonnel.Controls.Add(this.btnAnnulPerso);
-            this.grbPersonnel.Controls.Add(this.btnEnregPerso);
-            this.grbPersonnel.Location = new System.Drawing.Point(12, 360);
-            this.grbPersonnel.Name = "grbPersonnel";
-            this.grbPersonnel.Size = new System.Drawing.Size(776, 181);
-            this.grbPersonnel.TabIndex = 1;
-            this.grbPersonnel.TabStop = false;
-            this.grbPersonnel.Text = "ajouter un membre";
+            this.grbAjoutMembre.Controls.Add(this.cbServices);
+            this.grbAjoutMembre.Controls.Add(this.label5);
+            this.grbAjoutMembre.Controls.Add(this.txtMail);
+            this.grbAjoutMembre.Controls.Add(this.txtTel);
+            this.grbAjoutMembre.Controls.Add(this.label4);
+            this.grbAjoutMembre.Controls.Add(this.label3);
+            this.grbAjoutMembre.Controls.Add(this.label2);
+            this.grbAjoutMembre.Controls.Add(this.label1);
+            this.grbAjoutMembre.Controls.Add(this.txtPrenom);
+            this.grbAjoutMembre.Controls.Add(this.txtNom);
+            this.grbAjoutMembre.Controls.Add(this.btnAnnulPerso);
+            this.grbAjoutMembre.Controls.Add(this.btnEnregPerso);
+            this.grbAjoutMembre.Location = new System.Drawing.Point(12, 360);
+            this.grbAjoutMembre.Name = "grbAjoutMembre";
+            this.grbAjoutMembre.Size = new System.Drawing.Size(776, 181);
+            this.grbAjoutMembre.TabIndex = 1;
+            this.grbAjoutMembre.TabStop = false;
+            this.grbAjoutMembre.Text = "ajouter un membre";
+            // 
+            // cbServices
+            // 
+            this.cbServices.FormattingEnabled = true;
+            this.cbServices.Location = new System.Drawing.Point(82, 111);
+            this.cbServices.Name = "cbServices";
+            this.cbServices.Size = new System.Drawing.Size(121, 24);
+            this.cbServices.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 114);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "service";
+            // 
+            // txtMail
+            // 
+            this.txtMail.Location = new System.Drawing.Point(429, 70);
+            this.txtMail.Name = "txtMail";
+            this.txtMail.Size = new System.Drawing.Size(326, 22);
+            this.txtMail.TabIndex = 12;
+            // 
+            // txtTel
+            // 
+            this.txtTel.Location = new System.Drawing.Point(429, 31);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(326, 22);
+            this.txtTel.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(381, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 16);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "mail";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(381, 34);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(21, 16);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "tel";
             // 
             // label2
             // 
@@ -153,6 +204,7 @@
             this.btnAnnulPerso.TabIndex = 4;
             this.btnAnnulPerso.Text = "annuler";
             this.btnAnnulPerso.UseVisualStyleBackColor = true;
+            this.btnAnnulPerso.Click += new System.EventHandler(this.btnAnnulPerso_Click);
             // 
             // btnEnregPerso
             // 
@@ -162,78 +214,21 @@
             this.btnEnregPerso.TabIndex = 3;
             this.btnEnregPerso.Text = "enregistrer";
             this.btnEnregPerso.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(381, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 16);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "tel";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(381, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 16);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "mail";
-            // 
-            // txtTel
-            // 
-            this.txtTel.Location = new System.Drawing.Point(429, 31);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(326, 22);
-            this.txtTel.TabIndex = 11;
-            // 
-            // txtMail
-            // 
-            this.txtMail.Location = new System.Drawing.Point(429, 70);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(326, 22);
-            this.txtMail.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 114);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "service";
-            // 
-            // txtService
-            // 
-            this.txtService.Location = new System.Drawing.Point(82, 111);
-            this.txtService.Name = "txtService";
-            this.txtService.Size = new System.Drawing.Size(280, 22);
-            this.txtService.TabIndex = 14;
-            // 
-            // btnAffAbsences
-            // 
-            this.btnAffAbsences.Location = new System.Drawing.Point(229, 547);
-            this.btnAffAbsences.Name = "btnAffAbsences";
-            this.btnAffAbsences.Size = new System.Drawing.Size(304, 33);
-            this.btnAffAbsences.TabIndex = 2;
-            this.btnAffAbsences.Text = "afficher les absences";
-            this.btnAffAbsences.UseVisualStyleBackColor = true;
+            this.btnEnregPerso.Click += new System.EventHandler(this.btnEnregPerso_Click);
             // 
             // FrmMediaTek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 582);
-            this.Controls.Add(this.btnAffAbsences);
-            this.Controls.Add(this.grbPersonnel);
+            this.ClientSize = new System.Drawing.Size(800, 546);
+            this.Controls.Add(this.grbAjoutMembre);
             this.Controls.Add(this.grbLePersonnel);
             this.Name = "FrmMediaTek";
             this.Text = "MediaTek";
             this.grbLePersonnel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonnel)).EndInit();
-            this.grbPersonnel.ResumeLayout(false);
-            this.grbPersonnel.PerformLayout();
+            this.grbAjoutMembre.ResumeLayout(false);
+            this.grbAjoutMembre.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -245,7 +240,7 @@
         private System.Windows.Forms.DataGridView dgvPersonnel;
         private System.Windows.Forms.Button btnSuppression;
         private System.Windows.Forms.Button btnModification;
-        private System.Windows.Forms.GroupBox grbPersonnel;
+        private System.Windows.Forms.GroupBox grbAjoutMembre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPrenom;
@@ -256,9 +251,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMail;
         private System.Windows.Forms.TextBox txtTel;
-        private System.Windows.Forms.TextBox txtService;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnAffAbsences;
+        private System.Windows.Forms.ComboBox cbServices;
+        private System.Windows.Forms.GroupBox grbPersonnel;
     }
 }
 

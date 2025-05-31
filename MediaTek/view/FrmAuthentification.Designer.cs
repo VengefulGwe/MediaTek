@@ -55,7 +55,6 @@
             this.label2.Size = new System.Drawing.Size(32, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "pwd";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtLogin
             // 
@@ -68,6 +67,7 @@
             // 
             this.txtPwd.Location = new System.Drawing.Point(76, 55);
             this.txtPwd.Name = "txtPwd";
+            this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(220, 22);
             this.txtPwd.TabIndex = 3;
             // 
