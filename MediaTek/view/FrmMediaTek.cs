@@ -23,7 +23,7 @@ namespace MediaTek.view
         /// </summary>
         private Boolean enCoursDeModifPersonnel = false;
         /// <summary>
-        /// Objet pour gérer la liste des développeurs
+        /// Objet pour gérer la liste du personnel
         /// </summary>
         public BindingSource bdgPersonnel = new BindingSource();
         /// <summary>
@@ -57,7 +57,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        /// Affiche les développeurs
+        /// Affiche le personnel
         /// </summary>
         public void RemplirListePersonnel()
         {
@@ -78,7 +78,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        ///  Demande de modification d'un développeur
+        ///  Demande de modification d'un membre
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -101,7 +101,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        /// Demande de suppression d'un développeur
+        /// Demande de suppression d'un membre
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -123,7 +123,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        /// Demande d'enregistrement de l'ajout ou de la modification d'un développeur
+        /// Demande d'enregistrement de l'ajout ou de la modification d'un membre
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -157,7 +157,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        /// Annule la demande d'ajout ou de modification d'un développeur
+        /// Annule la demande d'ajout ou de modification d'un membre
         /// Vide les zones de saisie du développeur
         /// </summary>
         /// <param name="sender"></param>
@@ -171,7 +171,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        /// Modification d'affichage suivant si on est en cours de modif ou d'ajout d'un developpeur
+        /// Modification d'affichage suivant si on est en cours de modif ou d'ajout d'un membre
         /// </summary>
         /// <param name="modif"></param>
         private void EnCourseModifPersonnel(Boolean modif)

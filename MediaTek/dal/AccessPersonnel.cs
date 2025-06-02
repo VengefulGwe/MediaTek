@@ -55,9 +55,9 @@ namespace MediaTek.dal
         }
 
         /// <summary>
-        /// Récupère et retourne les développeurs
+        /// Récupère et retourne le personnel
         /// </summary>
-        /// <returns>liste des développeurs</returns>
+        /// <returns>liste du personnel</returns>
         public List<Personnel> GetLePersonnel()
         {
             List<Personnel> lePersonnel = new List<Personnel>();
@@ -90,9 +90,9 @@ namespace MediaTek.dal
         }
 
         /// <summary>
-        /// Demande de suppression d'un développeur
+        /// Demande de suppression d'un membre
         /// </summary>
-        /// <param name="personnel">objet developpeur à supprimer</param>
+        /// <param name="personnel">objet personnel à supprimer</param>
         public void DelPersonnel(Personnel personnel)
         {
             if (access.Manager != null)
@@ -113,9 +113,9 @@ namespace MediaTek.dal
         }
 
         /// <summary>
-        /// Demande d'ajout un développeur
+        /// Demande d'ajout un membre
         /// </summary>
-        /// <param name="personnel">objet developpeur à ajouter</param>
+        /// <param name="personnel">objet personnel à ajouter</param>
         public void AddPersonnel(Personnel personnel)
         {
             if (access.Manager != null)
@@ -141,9 +141,9 @@ namespace MediaTek.dal
         }
 
         /// <summary>
-        /// Demande de modification d'un développeur
+        /// Demande de modification d'un membre
         /// </summary>
-        /// <param name="personnel">objet developpeur à modifier</param>
+        /// <param name="personnel">objet personnel à modifier</param>
         public void UpdatePersonnel(Personnel personnel)
         {
             if (access.Manager != null)

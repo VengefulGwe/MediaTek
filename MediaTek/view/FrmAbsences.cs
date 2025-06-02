@@ -60,7 +60,7 @@ namespace MediaTek.view
             EnCoursDeModifAbsence(false);
         }
         /// <summary>
-        /// Affiche les développeurs
+        /// Affiche le personnel
         /// </summary>
         private void RemplirListeAbsences(int idpersonnel)
         {
@@ -108,7 +108,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        /// Affiche les profils
+        /// Affiche les motifs
         /// </summary>
         private void RemplirListeMotifs()
         {
@@ -129,7 +129,7 @@ namespace MediaTek.view
             }
         }
         /// <summary>
-        ///  Demande de modification d'un développeur
+        ///  Demande de modification d'une absence
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -149,7 +149,7 @@ namespace MediaTek.view
             }
         }
         /// <summary>
-        /// Demande de suppression d'un développeur
+        /// Demande de suppression d'une absence
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -170,7 +170,7 @@ namespace MediaTek.view
             }
         }
         /// <summary>
-        /// Demande d'enregistrement de l'ajout ou de la modification d'un développeur
+        /// Demande d'enregistrement de l'ajout ou de la modification d'une absence
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -207,7 +207,7 @@ namespace MediaTek.view
         }
 
         /// <summary>
-        /// Annule la demande d'ajout ou de modification d'un développeur
+        /// Annule la demande d'ajout ou de modification d'une absence
         /// Vide les zones de saisie du développeur
         /// </summary>
         /// <param name="sender"></param>
@@ -220,7 +220,7 @@ namespace MediaTek.view
             }
         }
         /// <summary>
-        /// Modification d'affichage suivant si on est en cours de modif ou d'ajout d'un developpeur
+        /// Modification d'affichage suivant si on est en cours de modif ou d'ajout d'une absence
         /// </summary>
         /// <param name="modif"></param>
         private void EnCoursDeModifAbsence(Boolean modif)
